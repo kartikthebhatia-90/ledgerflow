@@ -1,0 +1,9 @@
+LedgerFlow 2.0.2 clean application
+
+1. Paste your .env into this folder.
+2. Open this folder in VS Code.
+3. Run in PowerShell: .\INSTALL_AND_RUN_CLEAN_APP.ps1
+4. Open http://127.0.0.1:8000/?build=2.0.2
+5. Drag CSV, XLSX, XLSM or PDF files anywhere on the Data management visual.
+
+This package contains no company source files, uploaded records, generated context, agent run history or business databases.

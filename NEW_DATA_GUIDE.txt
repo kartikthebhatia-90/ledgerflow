@@ -1,0 +1,12 @@
+LedgerFlow full package with Banksia Office Supplies test data
+
+1. Extract the ledgerflow_dashboard folder.
+2. Paste your existing .env into the project root.
+3. Start LedgerFlow with setup_and_run.bat.
+4. The app automatically imports files from:
+   data/source_files/permanent
+   data/source_files/recurring
+5. Keep the app open while the staged files are processed.
+6. The original old demonstration dataset is disabled.
+
+The marker data/source_files/.use_as_folder_intake ensures this data directory is used even if an older .env still points FOLDER_INTAKE_DIR to ./file_drop.

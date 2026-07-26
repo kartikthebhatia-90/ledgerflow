@@ -1,0 +1,171 @@
+LedgerFlow background business worker ready
+LedgerFlow background business worker ready
+LedgerFlow background business worker ready
+=== competitor-intelligence started ===
+=== competitor-intelligence completed ===
+=== competitor-intelligence started ===
+=== competitor-intelligence completed ===
+LedgerFlow background business worker ready
+=== competitor-intelligence started ===
+=== competitor-intelligence completed ===
+LedgerFlow background business worker ready
+LedgerFlow background business worker ready
+=== upload started ===
+upload uploadjob_8dfca1b33da24232ac: received
+upload uploadjob_8dfca1b33da24232ac: reading prior upload count
+upload uploadjob_8dfca1b33da24232ac: dispatching .xlsx
+upload uploadjob_8dfca1b33da24232ac: stage identifying (10%)
+upload uploadjob_8dfca1b33da24232ac: stage preserving (20%)
+upload uploadjob_8dfca1b33da24232ac: stage extracting (32%)
+upload uploadjob_8dfca1b33da24232ac: stage mapping (54%)
+upload uploadjob_8dfca1b33da24232ac: stage committing (60%)
+upload uploadjob_8dfca1b33da24232ac: stage analytics (76%)
+upload uploadjob_8dfca1b33da24232ac: ingestion complete (bank_statements)
+upload uploadjob_8dfca1b33da24232ac: deterministic analysis complete
+upload uploadjob_8dfca1b33da24232ac: company context complete
+upload uploadjob_8dfca1b33da24232ac: validations complete
+upload uploadjob_8dfca1b33da24232ac: temporal decision context refreshed
+upload uploadjob_8dfca1b33da24232ac: Superset analytics snapshot refreshed
+upload uploadjob_8dfca1b33da24232ac: stage business_store (98%)
+upload uploadjob_8dfca1b33da24232ac: writing completed job state
+upload uploadjob_8dfca1b33da24232ac: completed
+=== upload completed ===
+=== competitor-intelligence started ===
+=== competitor-intelligence completed ===
+=== scheduled-validation started ===
+=== scheduled-validation completed ===
+=== scheduled-validation started ===
+=== scheduled-validation completed ===
+=== scheduled-validation started ===
+=== scheduled-validation completed ===
+=== scheduled-validation started ===
+=== scheduled-validation completed ===
+=== scheduled-validation started ===
+=== scheduled-validation completed ===
+=== scheduled-validation started ===
+=== scheduled-validation completed ===
+=== scheduled-validation started ===
+=== scheduled-validation completed ===
+=== scheduled-validation started ===
+=== scheduled-validation completed ===
+=== scheduled-validation started ===
+=== scheduled-validation completed ===
+=== scheduled-validation started ===
+=== scheduled-validation completed ===
+=== scheduled-validation started ===
+=== scheduled-validation completed ===
+=== scheduled-validation started ===
+=== scheduled-validation completed ===
+=== scheduled-validation started ===
+=== scheduled-validation completed ===
+=== scheduled-validation started ===
+=== scheduled-validation completed ===
+=== scheduled-validation started ===
+=== scheduled-validation completed ===
+=== scheduled-validation started ===
+=== scheduled-validation completed ===
+=== scheduled-validation started ===
+=== scheduled-validation completed ===
+=== scheduled-validation started ===
+=== scheduled-validation completed ===
+=== scheduled-validation started ===
+=== scheduled-validation completed ===
+=== scheduled-validation started ===
+=== scheduled-validation completed ===
+=== scheduled-validation started ===
+=== scheduled-validation completed ===
+=== scheduled-validation started ===
+=== scheduled-validation completed ===
+=== scheduled-validation started ===
+=== scheduled-validation completed ===
+=== scheduled-validation started ===
+=== scheduled-validation completed ===
+=== scheduled-validation started ===
+=== scheduled-validation completed ===
+=== scheduled-validation started ===
+=== scheduled-validation completed ===
+=== scheduled-validation started ===
+=== scheduled-validation completed ===
+=== scheduled-validation started ===
+=== scheduled-validation completed ===
+=== scheduled-validation started ===
+=== scheduled-validation completed ===
+=== scheduled-validation started ===
+=== scheduled-validation completed ===
+=== scheduled-validation started ===
+=== scheduled-validation completed ===
+=== scheduled-validation started ===
+=== scheduled-validation completed ===
+=== scheduled-validation started ===
+=== scheduled-validation completed ===
+=== scheduled-validation started ===
+=== scheduled-validation completed ===
+=== scheduled-validation started ===
+=== scheduled-validation completed ===
+=== scheduled-validation started ===
+=== scheduled-validation completed ===
+=== scheduled-validation started ===
+=== scheduled-validation completed ===
+=== scheduled-validation started ===
+=== scheduled-validation completed ===
+=== scheduled-validation started ===
+=== scheduled-validation completed ===
+=== scheduled-validation started ===
+=== scheduled-validation completed ===
+=== scheduled-validation started ===
+=== scheduled-validation completed ===
+=== scheduled-validation started ===
+=== scheduled-validation completed ===
+=== scheduled-validation started ===
+=== scheduled-validation completed ===
+=== scheduled-validation started ===
+=== scheduled-validation completed ===
+=== scheduled-validation started ===
+=== scheduled-validation completed ===
+=== scheduled-validation started ===
+=== scheduled-validation completed ===
+=== scheduled-validation started ===
+=== scheduled-validation completed ===
+=== scheduled-validation started ===
+=== scheduled-validation completed ===
+=== scheduled-validation started ===
+=== scheduled-validation completed ===
+=== scheduled-validation started ===
+=== scheduled-validation completed ===
+=== scheduled-validation started ===
+=== scheduled-validation completed ===
+=== scheduled-validation started ===
+=== scheduled-validation completed ===
+=== scheduled-validation started ===
+=== scheduled-validation completed ===
+=== scheduled-validation started ===
+=== scheduled-validation completed ===
+=== scheduled-validation started ===
+=== scheduled-validation completed ===
+=== scheduled-validation started ===
+=== scheduled-validation completed ===
+=== scheduled-validation started ===
+=== scheduled-validation completed ===
+=== scheduled-validation started ===
+=== scheduled-validation completed ===
+=== scheduled-validation started ===
+=== scheduled-validation completed ===
+=== scheduled-validation started ===
+=== scheduled-validation completed ===
+=== scheduled-validation started ===
+=== scheduled-validation completed ===
+=== scheduled-validation started ===
+=== scheduled-validation completed ===
+=== scheduled-validation started ===
+=== scheduled-validation completed ===
+=== scheduled-validation started ===
+=== scheduled-validation completed ===
+=== scheduled-validation started ===
+=== scheduled-validation completed ===
+=== scheduled-validation started ===
+=== scheduled-validation completed ===
+=== scheduled-validation started ===
+=== scheduled-validation completed ===
+LedgerFlow background business worker ready
+=== competitor-intelligence started ===
+=== competitor-intelligence completed ===

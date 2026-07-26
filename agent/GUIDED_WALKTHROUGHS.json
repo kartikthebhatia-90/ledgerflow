@@ -1,0 +1,84 @@
+{
+  "overview": {
+    "requires_core_setup": true,
+    "incomplete_intro": "I will hold the full business walkthrough until the five core setup documents are represented. The remaining files are: {missing_documents}.",
+    "complete_intro": "Oh nice\u2014the core setup is complete. I\u2019ll take you through the app and explain what the verified data says about your business in detail.",
+    "steps": [
+      {
+        "destination": "overview",
+        "target": "overview-metric-grid",
+        "message": "This analytics summary starts with cash of {cash}, a current ratio of {current_ratio}, monthly recorded inflows of {revenue_month}, and {open_checks} open review checks."
+      },
+      {
+        "destination": "overview",
+        "target": "overview-performance-chart",
+        "message": "This chart compares recorded inflows and operating outflows over time. The latest period shows {revenue_month} of inflows against {expenses_month} of outflows."
+      },
+      {
+        "destination": "overview",
+        "target": "overview-cash-forecast-chart",
+        "message": "The cash forecast begins at {cash}, has an estimated runway of {cash_runway_days} days, and reaches a projected low point of {forecast_low_point}."
+      },
+      {
+        "destination": "overview",
+        "target": "overview-position-chart",
+        "message": "The financial-position chart explains the composition behind liquidity: current assets are {current_assets}, current liabilities are {current_liabilities}, and working capital is {working_capital}."
+      },
+      {
+        "destination": "overview",
+        "target": "overview-profit-chart",
+        "message": "The profit structure uses the latest uploaded Profit and Loss statement. Reported revenue is {statement_revenue}, total costs are {statement_costs}, and provisional net profit is {statement_profit}."
+      },
+      {
+        "destination": "accounts",
+        "target": "current-ratio-card",
+        "message": "Accounts shows how the evidence posts into balances. The current ratio is {current_ratio}, the quick ratio is {quick_ratio}, and debt represents {debt_to_assets_percent} of reported assets."
+      },
+      {
+        "destination": "accounts",
+        "target": "accounts-table",
+        "message": "The account register is the audit trail behind those ratios. Draft or low-confidence classifications remain reviewable instead of silently changing final reporting."
+      },
+      {
+        "destination": "tax",
+        "target": "tax-summary",
+        "message": "Tax is provisional and review-required. The current taxable-income basis is {taxable_income}, the indicative income-tax estimate is {income_tax_estimate}, and there are {tax_review_count} tax or coding exceptions."
+      },
+      {
+        "destination": "marketing",
+        "target": "marketing-channel-chart",
+        "message": "Marketing is currently in {marketing_mode} mode. It shows {marketing_spend} of spend against {marketing_revenue} of revenue context, with a displayed ROAS of {marketing_roas}."
+      },
+      {
+        "destination": "intelligence",
+        "target": "market-intelligence-workspace",
+        "message": "Company Intelligence is {intelligence_status}. It only ranks competitors when comparable numeric evidence exists, and it keeps unsupported peer values blank."
+      },
+      {
+        "destination": "decisions",
+        "target": "context-board-runtime",
+        "message": "Data Management places every staged file, processed source and editable context layer around Ledger AI. Connection distance controls influence, while source coverage and validation status remain available for safe decision-making."
+      },
+      {
+        "destination": "decisions",
+        "target": "permanent-file-library",
+        "message": "Your permanent setup now covers all five core categories. The library contains {setup_file_count} permanent upload records and {recurring_file_count} recurring upload records."
+      },
+      {
+        "destination": "decisions",
+        "target": "folder-intake-panel",
+        "message": "You can also paste files into the permanent and recurring folders inside the app directory. LedgerFlow queues them through the same staged processor and archives the originals after queuing."
+      },
+      {
+        "destination": "settings",
+        "target": "model-settings",
+        "message": "Settings controls NVIDIA, the permanent agent personality, clearable working context, and safe data reset. Routine accounting work remains deterministic and does not need model tokens."
+      },
+      {
+        "destination": "overview",
+        "target": "overview-metric-grid",
+        "message": "That completes the guided overview. The analytics page remains a concise view of performance, liquidity, cash outlook, financial position and profit structure."
+      }
+    ]
+  }
+}

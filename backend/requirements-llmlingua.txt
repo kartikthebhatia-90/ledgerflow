@@ -1,0 +1,2 @@
+# Optional. Install only when PROMPT_COMPRESSION_PROVIDER=llmlingua.
+llmlingua>=0.2.2

@@ -1,0 +1,54 @@
+{
+  "version": "1.0.0",
+  "sources": [
+    {
+      "id": "original_evidence",
+      "label": "Original uploaded evidence",
+      "authority": "primary",
+      "location": "data/bronze/default",
+      "purpose": "Immutable source preservation and audit traceability"
+    },
+    {
+      "id": "structured_evidence",
+      "label": "Mapped structured evidence",
+      "authority": "primary",
+      "location": "data/silver/default",
+      "purpose": "Normalised rows and document-specific fields"
+    },
+    {
+      "id": "business_database",
+      "label": "DuckDB business database",
+      "authority": "canonical",
+      "location": "data/database/business.duckdb",
+      "purpose": "Posted records, statements, invoices, journals, mappings and validation tasks"
+    },
+    {
+      "id": "analytics_outputs",
+      "label": "Gold analytics outputs",
+      "authority": "derived",
+      "location": "data/gold/default",
+      "purpose": "Reusable aggregated metrics and dashboard extracts"
+    },
+    {
+      "id": "company_context",
+      "label": "Company analytics context",
+      "authority": "contextual",
+      "location": "data/context/default/company_ai_context.json",
+      "purpose": "Document coverage, operating context and upload analyses"
+    },
+    {
+      "id": "market_intelligence",
+      "label": "Market intelligence context",
+      "authority": "contextual",
+      "location": "data/context/default/market_intelligence.json",
+      "purpose": "Opt-in competitor evidence and market analysis"
+    }
+  ],
+  "precedence": [
+    "verified structured evidence",
+    "posted ledger and reconciled statement snapshots",
+    "derived gold analytics",
+    "contextual narrative",
+    "demonstration data"
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "version": "1.2.0",
+  "principle": "When the user asks for an action, execute it or return a specific blocker. Do not replace execution with instructions.",
+  "actions": [
+    {
+      "id": "guided_overview",
+      "risk": "read_only",
+      "executor": "frontend",
+      "requires_core_setup": true
+    },
+    {
+      "id": "navigate",
+      "risk": "read_only",
+      "executor": "frontend",
+      "requires_core_setup": false
+    },
+    {
+      "id": "refresh_decision_context",
+      "risk": "local_write",
+      "executor": "backend",
+      "requires_core_setup": false
+    },
+    {
+      "id": "scan_folders",
+      "risk": "local_write",
+      "executor": "backend",
+      "requires_core_setup": false
+    },
+    {
+      "id": "repair_classifications",
+      "risk": "local_write",
+      "executor": "backend",
+      "requires_core_setup": false
+    },
+    {
+      "id": "refresh_validations",
+      "risk": "local_write",
+      "executor": "backend",
+      "requires_core_setup": false
+    },
+    {
+      "id": "generate_document",
+      "risk": "local_write",
+      "executor": "frontend",
+      "requires_core_setup": true
+    },
+    {
+      "id": "download_tax_workpaper",
+      "risk": "read_only",
+      "executor": "frontend",
+      "requires_core_setup": true
+    },
+    {
+      "id": "start_company_analysis",
+      "risk": "local_write",
+      "executor": "backend",
+      "requires_core_setup": true
+    },
+    {
+      "id": "clear_working_context",
+      "risk": "local_write",
+      "executor": "backend",
+      "requires_core_setup": false
+    },
+    {
+      "id": "reset_all_data",
+      "risk": "destructive",
+      "executor": "confirmation_ui",
+      "requires_core_setup": false
+    }
+  ]
+}

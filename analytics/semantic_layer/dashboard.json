@@ -1,0 +1,93 @@
+{
+  "version": "1.2.0",
+  "audience": [
+    "owner-manager",
+    "bookkeeper",
+    "external accountant"
+  ],
+  "decision_cadence": "weekly operating review with monthly close support",
+  "sections": [
+    {
+      "id": "overview",
+      "label": "Decision overview",
+      "purpose": "Answer what changed, what needs attention and what action is next.",
+      "requires_core_setup": true,
+      "hero_metrics": [
+        "cash_balance",
+        "working_capital",
+        "net_profit",
+        "overdue_invoice_total",
+        "data_trust_score"
+      ],
+      "charts": [
+        "cash_movement",
+        "cash_forecast",
+        "profit_bridge",
+        "working_capital_cycle",
+        "invoice_exposure"
+      ]
+    },
+    {
+      "id": "accounts",
+      "label": "Financial control",
+      "purpose": "Reconcile financial position, posted journals, account balances and review tasks.",
+      "requires_core_setup": true,
+      "charts": [
+        "balance_sheet_composition",
+        "account_movement",
+        "review_queue"
+      ]
+    },
+    {
+      "id": "tax",
+      "label": "Tax and compliance",
+      "purpose": "Show estimated obligations, evidence coverage and review-required gaps.",
+      "requires_core_setup": true,
+      "charts": [
+        "tax_bridge",
+        "bas_coverage",
+        "tax_exception_mix"
+      ]
+    },
+    {
+      "id": "marketing",
+      "label": "Growth analytics",
+      "purpose": "Separate verified spend and attribution from demonstrations and compare efficiency with margin.",
+      "requires_core_setup": true,
+      "charts": [
+        "channel_efficiency",
+        "spend_revenue",
+        "marketing_data_readiness"
+      ]
+    },
+    {
+      "id": "intelligence",
+      "label": "Company intelligence",
+      "purpose": "Compare verified company and competitor evidence only after explicit activation.",
+      "requires_core_setup": true,
+      "charts": [
+        "company_position",
+        "external_risk",
+        "cash_conversion_benchmark"
+      ]
+    },
+    {
+      "id": "decisions",
+      "label": "Data management",
+      "purpose": "Organise staged files, processed evidence and editable AI context in one source-to-decision workspace.",
+      "requires_core_setup": false,
+      "charts": [
+        "context_constellation",
+        "source_influence",
+        "decision_lenses",
+        "file_intake"
+      ]
+    },
+    {
+      "id": "settings",
+      "label": "Agent and settings",
+      "purpose": "Manage model configuration, semantic context and destructive reset controls.",
+      "requires_core_setup": false
+    }
+  ]
+}

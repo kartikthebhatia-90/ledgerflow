@@ -1,0 +1,46 @@
+services:
+  superset-db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: superset
+      POSTGRES_USER: superset
+      POSTGRES_PASSWORD: superset
+    volumes:
+      - ledgerflow_superset_postgres:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U superset -d superset"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  superset-cache:
+    image: redis:7-alpine
+    command: redis-server --save 60 1 --loglevel warning
+    volumes:
+      - ledgerflow_superset_redis:/data
+
+  superset:
+    build:
+      context: ./superset
+    depends_on:
+      superset-db:
+        condition: service_healthy
+      superset-cache:
+        condition: service_started
+    env_file:
+      - .env.superset
+    environment:
+      SUPERSET_CONFIG_PATH: /app/pythonpath/superset_config.py
+      PYTHONPATH: /app/pythonpath
+      SUPERSET_METADATA_DATABASE_URI: postgresql+psycopg2://superset:superset@superset-db:5432/superset
+      LEDGERFLOW_DUCKDB_URI: duckdb:////app/ledgerflow-data/database/superset.duckdb
+    ports:
+      - "8088:8088"
+    volumes:
+      - ./superset:/app/pythonpath
+      - ./data:/app/ledgerflow-data:ro
+    command: ["/app/pythonpath/init_superset.sh"]
+
+volumes:
+  ledgerflow_superset_postgres:
+  ledgerflow_superset_redis:

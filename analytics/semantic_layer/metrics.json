@@ -1,0 +1,124 @@
+{
+  "version": "1.0.0",
+  "metrics": [
+    {
+      "id": "cash_balance",
+      "label": "Cash balance",
+      "family": "liquidity",
+      "role": "hero",
+      "format": "currency",
+      "definition": "Cash and cash equivalents from the latest verified financial-position source.",
+      "canonical_source": "financial_position",
+      "fallback_source": "posted_ledger",
+      "grain": "company at latest verified date",
+      "required_documents": ["balance_sheet"],
+      "guardrails": ["cash_runway_days", "overdue_invoice_total"]
+    },
+    {
+      "id": "working_capital",
+      "label": "Working capital",
+      "family": "liquidity",
+      "role": "hero",
+      "format": "currency",
+      "definition": "Current assets less current liabilities from the same financial-position snapshot.",
+      "canonical_source": "financial_position",
+      "grain": "company at latest verified date",
+      "required_documents": ["balance_sheet"],
+      "guardrails": ["current_ratio", "quick_ratio"]
+    },
+    {
+      "id": "current_ratio",
+      "label": "Current ratio",
+      "family": "liquidity",
+      "role": "driver",
+      "format": "ratio",
+      "definition": "Current assets divided by current liabilities from one reconciled financial-position snapshot.",
+      "canonical_source": "financial_position",
+      "grain": "company at latest verified date",
+      "required_documents": ["balance_sheet"],
+      "target_field": "current_ratio_target"
+    },
+    {
+      "id": "net_profit",
+      "label": "Net profit",
+      "family": "profitability",
+      "role": "hero",
+      "format": "currency",
+      "definition": "Revenue less all reported expenses for the latest complete Profit and Loss period.",
+      "canonical_source": "profit_loss_snapshot",
+      "fallback_source": "posted_ledger",
+      "grain": "company by reporting period",
+      "required_documents": ["profit_loss"],
+      "guardrails": ["gross_margin", "taxable_profit"]
+    },
+    {
+      "id": "monthly_inflows",
+      "label": "Monthly inflows",
+      "family": "movement",
+      "role": "driver",
+      "format": "currency",
+      "definition": "Positive bank and transaction movements in the latest available calendar month.",
+      "canonical_source": "transactions",
+      "grain": "company by calendar month",
+      "required_documents": ["bank_statements"]
+    },
+    {
+      "id": "monthly_outflows",
+      "label": "Monthly outflows",
+      "family": "movement",
+      "role": "driver",
+      "format": "currency",
+      "definition": "Absolute value of negative bank and transaction movements in the latest available calendar month.",
+      "canonical_source": "transactions",
+      "grain": "company by calendar month",
+      "required_documents": ["bank_statements"]
+    },
+    {
+      "id": "overdue_invoice_total",
+      "label": "Overdue invoice exposure",
+      "family": "working_capital",
+      "role": "guardrail",
+      "format": "currency",
+      "definition": "Open invoices whose due date is before the current date.",
+      "canonical_source": "invoices",
+      "grain": "company at current date",
+      "required_documents": ["supplier_invoices", "sales_invoices"]
+    },
+    {
+      "id": "taxable_profit",
+      "label": "Taxable profit estimate",
+      "family": "tax",
+      "role": "hero",
+      "format": "currency",
+      "definition": "Posted-ledger taxable basis where complete, otherwise the latest Profit and Loss snapshot clearly marked provisional.",
+      "canonical_source": "tax_workpaper",
+      "fallback_source": "profit_loss_snapshot",
+      "grain": "company by tax period",
+      "required_documents": ["profit_loss"],
+      "guardrails": ["tax_review_count", "gst_profile_status"]
+    },
+    {
+      "id": "marketing_roas",
+      "label": "Marketing ROAS",
+      "family": "growth",
+      "role": "diagnostic",
+      "format": "ratio",
+      "definition": "Attributed revenue divided by verified marketing spend. Demonstration values must never be presented as actual.",
+      "canonical_source": "marketing_attribution",
+      "grain": "channel by reporting period",
+      "required_documents": ["marketing_data"],
+      "guardrails": ["gross_margin", "attribution_mode"]
+    },
+    {
+      "id": "data_trust_score",
+      "label": "Data trust score",
+      "family": "quality",
+      "role": "guardrail",
+      "format": "score",
+      "definition": "Weighted score from setup coverage, classification integrity, metric reconciliation, freshness and unresolved validation checks.",
+      "canonical_source": "data_quality_checks",
+      "grain": "company at refresh time",
+      "required_documents": []
+    }
+  ]
+}
